@@ -22,5 +22,6 @@
 pip3 install selenium
 ```
 ### 3. 在run.sh中設定路徑位置
-創建新的瀏覽器資料夾
---user-data-dir="C:\MYDATA\Script\Python\twitch-bot\userdata" 改成自己想要的路徑
+創建新的瀏覽器資料夾  
+--user-data-dir="C:\MYDATA\Script\Python\twitch-bot\userdata"  
+改成自己想要的路徑（瀏覽器的資料會儲存在這個路徑下）
