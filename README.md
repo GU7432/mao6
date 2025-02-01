@@ -1,13 +1,22 @@
 # mao6
 
-自動發送訊息在twitch
+自動發送訊息到 Twitch 聊天室。
 
 ## 目錄
-
 - [介紹](#介紹)
+- [安裝與使用說明](#安裝與使用說明)
+- [建議改進](#建議改進)
 
 ## 介紹
+這個專案使用 **Python** 和 **Selenium** 來實現自動登入 Twitch 並發送訊息的功能。
 
-這個專案是用來自動化發送訊息到 Twitch 聊天的工具。它使用 Python 和 Selenium 庫來實現自動登入並發送訊息。
+## 🛠️ 安裝與使用說明
+### 1. 安裝環境
+請確保你已安裝：
+- Python 3.x
+- Google Chrome 瀏覽器
+- `pip` 套件管理器
 
-
+### 2. 安裝必要的 Python 套件
+```bash
+pip install -r requirements.txt
