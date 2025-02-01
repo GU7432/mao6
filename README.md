@@ -19,4 +19,8 @@
 
 ### 2. 安裝必要的 Python 套件
 ```bash
-pip install -r requirements.txt
+pip3 install selenium
+
+### 3. 在run.sh中設定路徑位置
+創建新的瀏覽器資料夾
+--user-data-dir="C:\MYDATA\Script\Python\twitch-bot\userdata" 改成自己想要的路徑
