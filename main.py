@@ -4,8 +4,8 @@ import threading
 from randommessage import getmes
 from controlchrome import send, init
 
-lo = 1
-hi = 3
+lo = 1 # 最小间隔时间
+hi = 3 # 最大间隔时间
 isrunning = False # 是否正在发送讯息
 send_count = 0  # 已发送讯息次数
 stop_program = False  # 是否退出程序
