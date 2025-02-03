@@ -10,4 +10,3 @@ def getmes():
     for _ in range(n): random_message += random.choice(messages).rstrip("\n")
     # print(random_message)
     return random_message
-getmes()

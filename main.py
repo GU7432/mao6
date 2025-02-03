@@ -6,7 +6,7 @@ from controlchrome import send, init
 
 lo = 1
 hi = 3
-isrunning = False
+isrunning = False # 是否正在发送讯息
 send_count = 0  # 已发送讯息次数
 stop_program = False  # 是否退出程序
 countdown_running = False  # 倒计时是否运行中
