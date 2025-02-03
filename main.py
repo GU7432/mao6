@@ -13,7 +13,7 @@ countdown_running = False  # 倒计时是否运行中
 total_seconds = 0  # 全局变量，存储总秒数
 
 def seconds_to_hms(seconds):
-    """将秒数转换为'小时:分钟:秒'的格式"""
+    # 将秒数转换为'小时:分钟:秒'的格式
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
@@ -57,13 +57,6 @@ def settiming():
     try:
         lo = int(loEntry.get())
         hi = int(hiEntry.get())
-    except ValueError:
-        print("请输入有效的数字！")
-
-def set_send_count():
-    global max_send_count
-    try:
-        max_send_count = int(sendCountEntry.get())
     except ValueError:
         print("请输入有效的数字！")
 
@@ -130,14 +123,6 @@ hiEntry.pack(side=tk.LEFT, padx=5)
 settime_btn = tk.Button(setFrame, text="設定", command=settiming)
 settime_btn.pack(side=tk.LEFT, padx=5)
 
-# 設定發送次數
-sendCountFrame = tk.Frame(root)
-sendCountFrame.pack(pady=10)
-tk.Label(sendCountFrame, text="設定發送次數:").pack(side=tk.LEFT)
-sendCountEntry = tk.Entry(sendCountFrame, width=5)
-sendCountEntry.pack(side=tk.LEFT, padx=5)
-setSendCount_btn = tk.Button(sendCountFrame, text="設定", command=set_send_count)
-setSendCount_btn.pack(side=tk.LEFT, padx=5)
 
 # 設定倒計時
 countdownSetFrame = tk.Frame(root)
@@ -150,7 +135,7 @@ countdownMinutesEntry.pack(side=tk.LEFT, padx=5)
 countdownSecondsEntry = tk.Entry(countdownSetFrame, width=5)
 countdownSecondsEntry.pack(side=tk.LEFT, padx=5)
 
-# 添加开始倒计时按钮
+# 开始倒计时按钮
 start_countdown_btn = tk.Button(countdownSetFrame, text="開始倒計時", command=startCountdown)
 start_countdown_btn.pack(side=tk.LEFT, padx=5)
 
