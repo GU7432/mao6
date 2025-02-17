@@ -26,13 +26,3 @@ def send(sss: str):
         EC.visibility_of_element_located((By.XPATH, "//*[@id=\"live-page-chat\"]/div/div/div[2]/div/div/section/div/div[6]/div[2]/div[2]/div[2]/div[3]/div/button"))
     )
     sendButton.click()
-
-
-
-
-
-
-
-
-
-
